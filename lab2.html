@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌸 Bhawana Basnet's Portfolio 🌸</title>
-    
+    <title>🌸 Bhawana Basnet's Portfolio - Lab 2 🌸</title>
+
     <style>
-        html, body { 
-            margin: 0; 
-            padding: 0; 
-            width: 100%; 
-            eight: 100%; 
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
             font-family: "Times New Roman", serif;
             background-color: #E8DEF8;
             color: #333;
@@ -20,88 +20,211 @@
             min-height: 100%;
             padding: 20px;
         }
+
         section {
             background-color: white;
             border: 1px solid #5A3D7A;
             margin: 15px 0;
             padding: 20px;
         }
-          h2 {
+
+        h1 {
             border-bottom: 2px solid #5A3D7A;
             padding-bottom: 5px;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        input[type=text],
+        input[type=password],
+        input[type=email],
+        input[type=tel],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color: #5A3D7A;
+            color: white;
+            border: 1px solid black;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
-<section>
-    <h2>Skills and Interests</h2>
 
-    <h3>Skills I Have</h3>
+<body>
 
-    <ul type="disc">
-        <li>HTML</li>
-        <li>Microsoft Word</li>
-        <li>Microsoft Excel</li>
-        <li>Communication</li>
-        <li>Teamwork</li>
-    </ul>
+<div class="page">
 
-    <h3>Things That Help Me Relax</h3>
+    <section>
+        <h1>Lists</h1>
 
-    <ul type="circle">
-        <li>Listening to music</li>
-        <li>Talking with friends</li>
-        <li>Watching anime</li>
-    </ul>
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>Microsoft Word</li>
+            <li>Microsoft Excel</li>
+            <li>Communication</li>
+            <li>Teamwork</li>
+        </ul>
 
-    <h3>Computer Skills I'm Learning</h3>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Listening to Music</li>
+            <li>Talking with Friends</li>
+            <li>Watching Anime</li>
+        </ul>
 
-    <ul type="square">
-        <li>HTML</li>
-        <li>GitHub</li>
-        <li>VS Code</li>
-    </ul>
+        <h2>Daily Activities</h2>
+        <ol>
+            <li>Wake up early.</li>
+            <li>Attend college.</li>
+            <li>Complete homework.</li>
+            <li>Practice HTML.</li>
+        </ol>
 
-    <h3>Skills I Want to Improve</h3>
+        <h2>Steps to Create a Website</h2>
+        <ol>
+            <li>Plan the website.</li>
+            <li>Write HTML code.</li>
+            <li>Save the file.</li>
+            <li>Open it in a web browser.</li>
+        </ol>
+    </section>
 
-    <ol type="1">
-        <li>Time Management</li>
-        <li>Communication</li>
-        <li>Confidence</li>
-        <li>Problem Solving</li>
-    </ol>
+    <section>
+        <h1>My Education</h1>
 
-    <h3>My Daily Routine</h3>
+        <p>Education has helped me build my knowledge and develop useful skills for my future.</p>
 
-    <ol type="A">
-        <li>Wake up early.</li>
-        <li>Attend college.</li>
-        <li>Complete homework.</li>
-        <li>Practice HTML.</li>
-    </ol>
+        <table>
+            <thead>
+                <tr>
+                    <th>Level</th>
+                    <th>School / College</th>
+                </tr>
+            </thead>
 
-    <h3>Study Plan</h3>
+            <tbody>
+                <tr>
+                    <td>SEE</td>
+                    <td>Reliance Public School</td>
+                </tr>
 
-    <ol type="a">
-        <li>Read the chapter.</li>
-        <li>Take notes.</li>
-        <li>Solve practice questions.</li>
-    </ol>
+                <tr>
+                    <td>Class 11</td>
+                    <td>St. Xavier's College</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <h3>Career Roadmap</h3>
+    <section>
+        <h1>HTML Form</h1>
 
-    <ol type="I">
-        <li>Complete Class 12.</li>
-        <li>Choose a suitable career.</li>
-        <li>Build new skills.</li>
-    </ol>
+        <form>
 
-    <h3>How I Learn HTML</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Input</th>
+                    </tr>
+                </thead>
 
-    <ol type="i">
-        <li>Watch tutorials.</li>
-        <li>Practice coding.</li>
-        <li>Fix mistakes.</li>
-    </ol>
-</section>
+                <tbody>
+
+                    <tr>
+                        <td><label for="fullname">Full Name</label></td>
+                        <td><input type="text" id="fullname" placeholder="Enter your full name"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="username">Username</label></td>
+                        <td><input type="text" id="username" placeholder="Enter your username"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="password">Password</label></td>
+                        <td><input type="password" id="password" placeholder="Enter your password"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" placeholder="Enter your email"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="phone">Phone Number</label></td>
+                        <td><input type="tel" id="phone" placeholder="Enter your phone number"></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="country">Country</label></td>
+                        <td>
+                            <select id="country">
+                                <option>Nepal</option>
+                                <option>India</option>
+                                <option>China</option>
+                                <option>Japan</option>
+                                <option>Korea</option>
+                                <option>Pakistan</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <label><input type="radio" name="gender"> Male</label><br>
+                            <label><input type="radio" name="gender"> Female</label><br>
+                            <label><input type="radio" name="gender"> Other</label><br>
+                            <label><input type="radio" name="gender"> Do Not Mention</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Skills</td>
+                        <td>
+                            <label><input type="checkbox"> Coding</label><br>
+                            <label><input type="checkbox"> Public Speaking</label><br>
+                            <label><input type="checkbox"> Teamwork</label><br>
+                            <label><input type="checkbox"> Other</label><br><br>
+
+                            <input type="text" placeholder="Enter another skill">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="message">Message</label></td>
+                        <td>
+                            <textarea id="message" rows="4" placeholder="Write your message here"></textarea>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <br>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </section>
+
+</div>
+
 </body>
 </html>
